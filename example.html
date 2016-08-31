@@ -3,6 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>打字机文字特效</title>
+        <style>
+            .ti-container {
+                display: block;
+                font-size: inherit;
+            }
+        </style>
     </head>
     <body>
         <p id="lala"></p>
@@ -13,7 +19,7 @@
     $('#lala').typeIt({
         whatToType: ["你是一个好人.", "但是...."],//打字的文本
         typeSpeed: 250,//打字延迟
-        breakLines: false,//是否多行？
+        breakLines: true,//是否多行？
         lifeLike: true,//是否以自然的方式打字
         showCursor: true,//是否现实鼠标指针
         breakWait:500,//遇到新段落打字的延迟
